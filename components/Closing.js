@@ -55,7 +55,7 @@ export default function Closing() {
           currency: "USD",
           items: [
             {
-              item_id: "recetas_saludables_2_diabeticos_closing",
+              item_id: "healthy_recipes_diabetics_closing",
               item_name: copy.testimonials.productLabel,
               price: priceNum,
             },

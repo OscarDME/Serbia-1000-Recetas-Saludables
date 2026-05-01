@@ -65,7 +65,7 @@ export default function FinalCta() {
           currency: "USD",
           items: [
             {
-              item_id: "recetas_saludables_2_diabeticos_cta",
+              item_id: "healthy_recipes_diabetics_cta",
               item_name: copy.testimonials.productLabel,
               price: priceNum,
             },
