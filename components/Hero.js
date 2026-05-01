@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { copy } from "@/lib/copy";
-import { ChevronDown, PlayCircle } from "lucide-react";
+import { ChevronDown, BookOpen } from "lucide-react";
 
 function getTimeLeft() {
   const now = new Date();
@@ -59,7 +59,9 @@ export default function Hero() {
 
       <div className="max-w-6xl mx-auto px-4 md:px-6 pt-6 md:pt-10">
         <div className="text-center text-sm md:text-base font-extrabold tracking-tight text-[var(--color-brand-dark)]">
-          {brand.name} <span className="text-slate-400">|</span>{" "}
+          {brand.name && (
+            <>{brand.name} <span className="text-slate-400">|</span>{" "}</>
+          )}
           <span className="text-[var(--color-ink)]">{brand.tagline}</span>
         </div>
       </div>
@@ -89,7 +91,7 @@ export default function Hero() {
             onClick={handleScroll}
             className="group mt-8 inline-flex w-full md:w-auto items-center justify-center gap-2 bg-[var(--color-brand)] hover:bg-[var(--color-brand-dark)] text-white font-extrabold text-base md:text-lg px-7 py-5 rounded-2xl shadow-[0_15px_40px_-12px_rgba(22,163,74,0.55)] border-b-4 border-[var(--color-brand-dark)] transition-all hover:translate-y-0.5"
           >
-            <PlayCircle className="w-5 h-5" />
+            <BookOpen className="w-5 h-5" />
             {hero.cta}
             <ChevronDown className="w-5 h-5 group-hover:translate-y-0.5 transition-transform" />
           </a>
