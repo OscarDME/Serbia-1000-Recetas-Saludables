@@ -10,12 +10,12 @@ export default function HotmartSrcListener() {
 
     if (src) {
       localStorage.setItem("hotmart_src", src);
-      console.log("✅ src guardado:", src);
+      console.log("✅ src saved:", src);
     }
 
     if (fbclid) {
       localStorage.setItem("hotmart_fbclid", fbclid);
-      console.log("✅ fbclid guardado:", fbclid);
+      console.log("✅ fbclid saved:", fbclid);
     }
   }, []);
 

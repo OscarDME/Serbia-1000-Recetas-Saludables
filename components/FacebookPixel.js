@@ -50,12 +50,12 @@ export default function FacebookPixel() {
                       var currentUrl = location.origin + location.pathname + location.search;
 
                       if (lastPV === currentUrl) {
-                        console.log("🛡️ [FB] PageView duplicado bloqueado:", currentUrl);
+                        console.log("🛡️ [FB] PageView duplicate blocked:", currentUrl);
                         return;
                       }
 
                       lastPV = currentUrl;
-                      console.log("✅ [FB] PageView ENVIADO a Meta:", currentUrl);
+                      console.log("✅ [FB] PageView SENT to Meta:", currentUrl);
                     }
                   } catch (e) {}
 

@@ -66,7 +66,7 @@ export default function FinalCta() {
           items: [
             {
               item_id: "recetas_saludables_2_diabeticos_cta",
-              item_name: "Recetas Saludables 2.0 para Diabeticos",
+              item_name: copy.testimonials.productLabel,
               price: priceNum,
             },
           ],

@@ -56,7 +56,7 @@ export default function Closing() {
           items: [
             {
               item_id: "recetas_saludables_2_diabeticos_closing",
-              item_name: "Recetas Saludables 2.0 para Diabeticos",
+              item_name: copy.testimonials.productLabel,
               price: priceNum,
             },
           ],
