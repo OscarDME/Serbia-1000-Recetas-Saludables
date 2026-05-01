@@ -145,7 +145,7 @@ export default function FinalCta() {
         {finalCta.guaranteeImage && (
           <img
             src={finalCta.guaranteeImage}
-            alt="Garantía"
+            alt={finalCta.guaranteeImageAlt || ""}
             className="mt-4 mx-auto h-24 md:h-28 w-auto"
           />
         )}

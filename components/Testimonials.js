@@ -57,7 +57,7 @@ export default function Testimonials() {
                   <div className="flex-1 min-w-0">
                     <p className="text-[14px] md:text-[15px] leading-tight">
                       <span className="font-bold text-[#1877f2]">{t.name}</span>{" "}
-                      <span className="text-slate-500 text-[13px] md:text-[14px]">opinó sobre</span>
+                      <span className="text-slate-500 text-[13px] md:text-[14px]">{testimonials.reviewedLabel}</span>
                     </p>
                     <div className="mt-1 flex flex-wrap items-center gap-1.5">
                       <span className="text-[12.5px] md:text-[13px] font-semibold text-[#1877f2] leading-snug">
